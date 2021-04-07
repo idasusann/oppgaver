@@ -57,6 +57,7 @@ radio.onReceivedNumber(function (receivedNumber) {
 
 Nå skal vi sette opp et enkelt fjernstyringsprogram. Micro:biten skal sende tall for å få bit:boten til å gjøre ulike ting. Foreksempel kan 0 være stopp, 1 være å kjøre fremover, 2 sving venstre og 3 sving høyre.
 
+Dette er den enkleste måten å gjøre det på:
 ## Sjekkliste {.check}
 
 - [ ] Når micro:bit ristes, skal den sende 0.
@@ -94,6 +95,8 @@ input.onButtonPressed(Button.B, function () {
 
 Micro:bit har en gyro som kan registrere om den holdes vannrett eller tipper oppover eller nedover ved å bruke blokken `helningsvinkel tonehøyde`{.microbitinput} under Inndata-mer. Her er oversettelsen litt dårlig pitch er oversatt med tonehøyde. Det kan vi bruke for å bestemme om den skal kjøre fremover eller bakover.
 I tillegg kan vi bruke en `hvis`{.microbitlogic}-løkke og sjekke hvordan knappene er trykket inn.
+
+Prøv dette om du vil gjøre det på en mer elegant, men mer kompleks måte. Hopp over dette om du har valgt å bruke den enkle måten:
 
 ## Sjekkliste {.check}
 
@@ -142,8 +145,9 @@ basic.forever(function () {
 - [ ] Hvorfor sender den 0 når ingen knapper er trykket?
 
 # Steg 3: Kjøre bilen {.activity}
+Nå må vi lage programmet på bit:boten. Den skal oversette tallene til bevegelse. 
 
-Nå må vi lage programmet på bit:boten. Den skal oversette tallene til bevegelse. Her er det to måter å gjøre det på. Du kan legge til egne bit:bot-koder. Da går du nederst under avansert og velger utvidelser. Der velger du bit:bot og får opp en egen fane som heter bit:bot. Den andre måten er å hardkode - med å bruke `skriv digital`{.microbitpins} eller `skriv analog`{.microbitpins}. Da må du finne ut hvilken pinne som gjør hva.
+Her er det to måter å gjøre det på. Du kan legge til egne bit:bot-koder. Da går du nederst under avansert og velger utvidelser. Der velger du bit:bot og får opp en egen fane som heter bit:bot. Den andre måten er å hardkode - med å bruke `skriv digital`{.microbitpins} eller `skriv analog`{.microbitpins}. Da må du finne ut hvilken pinne som gjør hva.
 
 ## Sjekkliste {.check}
 
